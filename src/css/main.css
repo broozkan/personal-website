@@ -1,0 +1,21 @@
+/*nav{
+    width: 100%;
+}
+nav ul{
+    list-style: none;
+}
+
+
+nav ul li{
+    float: left;
+    background : lightgray;
+    padding: 10px;
+}
+
+nav ul li:hover{
+    background : gray;
+}*/
+footer{
+    position: fixed;
+    bottom: 0;
+}

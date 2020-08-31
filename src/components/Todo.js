@@ -12,27 +12,29 @@ class Todo extends React.Component {
         this.cboxTodoClick = this.cboxTodoClick.bind(this);
     }
 
-    cboxTodoClick(){
+    
+    cboxTodoClick() {
         this.setState((prevState) => {
-            if(prevState.completed == true){
-                this.setState({
-                    completed:false
-                });
-            }else{
-                this.setState({
-                    completed:true
-                });
+            return{
+                completed: !prevState.completed
             }
-        })
+        });
     }
 
     render() {
+
+        const completedStyle = {
+            fontStyle: "italic",
+            color: "#cdcdcd",
+            textDecoration: "line-through"
+        }
+
         return (
             <div className="col-lg-12">
                 <div className="card">
                     <div className="card-body">
                         <input type="checkbox" onChange={this.cboxTodoClick} id={this.props.item.id} key={this.props.item.id} checked={this.state.completed} />
-                        <label for={this.props.item.id}>{this.props.item.text}</label>
+                        <label for={this.props.item.id} style={this.state.completed ? completedStyle:null} >{this.props.item.text}</label>
                     </div>
                 </div>
 

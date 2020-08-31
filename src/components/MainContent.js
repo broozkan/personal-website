@@ -1,35 +1,48 @@
-import React from 'react'
+import React, { Component } from 'react'
 import '../css/main.css'
-import Joke from './Joke';
+import Todo from './Todo';
+import todosData from '../data/todosData';
+import Swapi from './Swapi';
+import Form from './Form';
 
-const MainContent = () => {
 
-    const name = "Burhan";
-    const styles = {
-        color: "#FF8C00",
-        fontSize: 50
-    };
+class MainContent extends React.Component {
 
-    return (
-        <div className="container">
-            <div className="row">
-                <div className="col-lg-6 offset-lg-3">
-                    <h1 style={styles}>{name} Özkan</h1>
-                    <p>Welcome to my React.js website!</p>
-                </div>
-            </div>
-            <div className="row">
-                <div className="col-lg-10 offset-lg-1">
-                    <div className="row">
-                        <Joke prop={{question:"Say hello",punchLine:"Deneme"}} />
+    constructor() {
+        super();
+        this.state = {
+            name:"Burhan"
+        }
+    }
+
+    
+
+    
+    render() {
+    const todoList = todosData.map((item) => <Todo key={item.id} item={item} handleChange={this.cboxTodoClick} />);
+
+        return (
+            <div className="container">
+                <div className="row">
+                    <div className="col-lg-6 offset-lg-3">
+                        <h1 className="card-title">{this.state.name} Özkan</h1>
+                        <p>Welcome to my React.js website!</p>
                     </div>
+                </div>
+                <div className="row">
+                    <div className="col-lg-10 offset-lg-1">
+                        
+                            <Form />
+                        
 
 
 
+                    </div>
                 </div>
             </div>
-        </div>
-    );
+        );
+    }
+
 }
 
 export default MainContent

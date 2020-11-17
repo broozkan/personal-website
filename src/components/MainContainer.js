@@ -20,7 +20,6 @@ class MainContainer extends React.Component {
                             <Sidebar />
                         </Grid.Column>
                         <Grid.Column width={10}>
-
                             <BrowserRouter>
                                 <Navbar />
 

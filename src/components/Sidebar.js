@@ -13,7 +13,7 @@ class Sidebar extends React.Component {
                 <Card >
 
                     <Card.Content>
-                        <Card.Header>Burhan Özkan</Card.Header>
+                        <Card.Header>Burhan Özkannn</Card.Header>
                         <Card.Meta>
                             <span className='date'>broozkan__</span>
                         </Card.Meta>

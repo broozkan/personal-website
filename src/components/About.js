@@ -7,19 +7,22 @@ class About extends React.Component {
         super()
 
         this.state = {
-            description:"Hi. Welcome to my personal website. "
+            description:"Hi my name is Burhan. Welcome to my personal website."
         }
     }
 
     render() {
         return (
-
-            <Card>
-                <Card.Content header='About Me' />
-                <Card.Content description={this.state.description} />
-            </Card>
-
-
+            <div className="row">
+                <div className="col-lg-12 col-12">
+                    <h2>About Me</h2>
+                </div>
+                <div className="col-lg-12 col-12">
+                    <p>
+                        Hi! My name is Burhan. I'm full stack web developer for 5+ years.
+                    </p>
+                </div>
+            </div>
         )
     }
 }

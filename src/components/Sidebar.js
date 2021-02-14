@@ -13,16 +13,20 @@ class Sidebar extends React.Component {
                 <Card >
 
                     <Card.Content>
-                        <Card.Header>Burhan Özkannn</Card.Header>
+                        <Card.Header>Burhan Özkan</Card.Header>
                         <Card.Meta>
-                            <span className='date'>broozkan__</span>
+                            <span className='date'>@broozkan__</span>
                         </Card.Meta>
                         <Card.Description>
-                            Hi. I'm Burhan. I'm a full stack web developer.
-                     </Card.Description>
+                            Hi. I'm Burhan. I'm a full stack web developer for 5+ years.
+                            I'm a developer who always want to have different views, creating something interesting and valuable.
+                            <br></br>
+                            <br></br>
+                            For my resume <a href="/burhan_ozkan.pdf" target="_blank" download>click here</a>
+                        </Card.Description>
                     </Card.Content>
                     <Card.Content extra>
-                        <ContactInfo/>
+                        <ContactInfo />
                     </Card.Content>
                 </Card>
             </sidebar>

@@ -25,7 +25,7 @@ class MainContainer extends React.Component {
 
                                 <Switch>
                                     <Route path="/" exact >
-                                        <About />
+                                        <Projects />
                                     </Route>
                                     <Route path="/projects" >
                                         <Projects />

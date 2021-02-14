@@ -10,16 +10,8 @@ const Navbar = () => {
 
     return (
         <Menu>
-            <Menu.Item
-                name='about'
-                as={MenuLink}
-                to="/"
-                activeOnlyWhenExact={true}
-                label="About"
-            >
-
-            </Menu.Item>
-
+     
+     
             <Menu.Item
                 name='projects'
                 as={MenuLink}
